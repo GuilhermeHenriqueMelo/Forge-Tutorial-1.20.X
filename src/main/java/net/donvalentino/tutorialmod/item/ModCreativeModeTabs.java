@@ -1,6 +1,7 @@
 package net.donvalentino.tutorialmod.item;
 
 import net.donvalentino.tutorialmod.TutorialMod;
+import net.donvalentino.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -24,6 +25,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_SAPPHIRE.get());
 
                         output.accept(Items.DIAMOND);
+
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                     })
                     .build());
 

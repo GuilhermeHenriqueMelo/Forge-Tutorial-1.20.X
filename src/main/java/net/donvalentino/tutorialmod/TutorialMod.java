@@ -1,6 +1,7 @@
 package net.donvalentino.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.donvalentino.tutorialmod.block.ModBlocks;
 import net.donvalentino.tutorialmod.item.ModCreativeModeTabs;
 import net.donvalentino.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
